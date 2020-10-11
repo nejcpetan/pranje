@@ -1,0 +1,40 @@
+doctype html
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Dodeljevanje številk za dežurstva
+    meta(name='description' content='Dodeljevanje številk za dežurstva')
+    meta(name='author' content='Nathan Petan')
+    link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap' rel='stylesheet')
+    link(rel='canonical' href='https://getbootstrap.com/docs/3.3/examples/signin/')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp' crossorigin='anonymous')
+    title &Scaron;tevilke za de&zcaron;urstva
+    div
+    form(action='/adminSite' method='GET')
+        button.btn.btn-lg.btn-primary.btn-block(type='submit' style='margin: auto; position: absolute; align: left;') Vpis ŠSS 
+            span.glyphicon.glyphicon-list-alt(aria-hidden='true')
+div(style='border-radius: 1%; background-color: rgba(255, 255, 255, 0.904); margin: auto; position: absolute; top: 15%; left: 20%; bottom: 45%; right: 20%;')
+    div 
+        h1(style='text-align: center; padding-bottom: 2%;') &Zcaron;ivijo!
+        h3(style='text-align: center; padding-bottom: 15%;') Ko vpi&scaron;e&scaron; svoje polno ime, ti bo ra&ccaron;unalnik avtomatsko dodelil naključno &scaron;tevilko.
+    form.form-signin(action='/createEntry' method='POST' onsubmit='myButton.disabled = true; return true;')
+        h2.form-signin-heading(style='text-align: center; padding-bottom: 40px;') Vnesi svoje polno ime in številko sobe.
+        label.sr-only Ime in priimek
+        input#inputEmail.form-control(type='text' name='name' placeholder='Ime in priimek, številka sobe' required='' autofocus='')
+        button.btn.btn-lg.btn-primary.btn-block(type='submit' style='margin-top: 20px;') Potrdi
+.background
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous')
+footer.footer
+    div(style='margin: auto; position: absolute; left: 36%; bottom: 2%; right: 36%; position: fixed;')
+        p.text-muted
+            script(language='JavaScript').
+                function y2k(number) {
+                return (number < 1000) ? number + 1900 : number;
+                }
+                var today = new Date();
+                var year = y2k(today.getYear());
+                document.write('© ' + year + ' Študentski Dom Poljane - Vse pravice pridržane.'));

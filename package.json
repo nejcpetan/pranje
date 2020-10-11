@@ -1,0 +1,32 @@
+{
+  "name": "pranje",
+  "version": "1.0.0",
+  "description": "Keep track of laundry times for individual people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nejc Petan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nejcpetan/pranje.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "PUG",
+    "NODE.JS",
+    "Javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/nejcpetan/pranje/issues"
+  },
+  "homepage": "https://github.com/nejcpetan/pranje#readme"
+}
